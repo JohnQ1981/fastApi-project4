@@ -7,7 +7,7 @@ from fastapi import FastAPI
 import models
 # from models import Todos
 from database import engine, SessionLocal
-from routers import auth, todos, admin, users
+from routers import auth, todosold, admin, users, todos
 from starlette.staticfiles import StaticFiles
 
 
