@@ -16,6 +16,8 @@
       <th scope="col">Info</th>
       <th scope="col">Priority</th>
       <th scope="col">Owner ID</th>
+      <th scope="col">TASK ID #</th>
+        <th scope="col">Completed(True/False)</th>
       <th scope="col">Actions</th>
 
 
@@ -29,6 +31,10 @@
       <td>{{todo.title}} </td>
      <td>{{todo.priority}} </td>
     <td>{{todo.owner_id}} </td>
+
+     <td>{{todo.id}} </td>
+    <td>{{todo.complete}} </td>
+
       <td>
           <button type="button" class="btn btn-success">Complete</button>
           <button onclick="window.location.href='edit-todo/{{todo.id}}'" type="button" class="btn btn-info">Edit</button>
