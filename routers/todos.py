@@ -31,7 +31,7 @@ def get_db():
         db.close()
 
 
-@router.get("/", response_class=HTMLResponse)
+@router.get("/todos", response_class=HTMLResponse)
 async def read_all_by_user(request: Request):
     return templates.TemplateResponse("home.html", {"request": request})
 
